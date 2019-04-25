@@ -3,7 +3,7 @@
 '''
 Creator: Nahuel (Noel) Pregot
 Email: npregot@gmail.com
-Date: September 2018
+
 
 '''
 # https://gist.github.com/ziadoz/3e8ab7e944d02fe872c3454d17af31a5
@@ -66,14 +66,12 @@ import mysql.connector
 
 # +------------------------> LIBRARIES <----------------------------+
 
-# RAISE AN EXCEPTION IF CHROME IS NOT REACHABLE
-# SKIP IF SERVER RETURNS 404 WHEN VISITING THE FOLLOWER'S PROFILE
 
 # FUNCTIONS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 # READING BIO <-------------------------
 
-# username 	 = Account of the follower the bio is read from
+# username   = Account of the follower the bio is read from
 # dictionary = Temporary storage for emails
 # mother     = The account the scraper is scraping followers from
 # counter    = To display the # of emails that were found
@@ -166,11 +164,11 @@ def bio_reader(username, dictionary, mother, counter):
 						print('\tNew Email Found - Tot: {} emails'.format(len(dictionary)))
 						print('', end='\r')
 
-						# Addint UTC time in db format
+						# Adding UTC time in db format
 						form = '%Y-%m-%d %H:%M:%S (UTC)'
 						now = datetime.datetime.utcnow().strftime(form)
 
-						# Saving data to the database
+						# Saving data to database
 						try:
 							 
 							# # LOGGING INTO DB <--------
