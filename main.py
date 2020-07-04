@@ -4,7 +4,7 @@
 Creator: Nahuel (Noel) Pregot
 Email: npregot@gmail.com
 
-
+IMPORTANT: This source code is NOT up to date. Therefore, you the xpaths might not work. Please review them as you debug the program
 '''
 # https://gist.github.com/ziadoz/3e8ab7e944d02fe872c3454d17af31a5
 
